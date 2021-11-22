@@ -4,6 +4,10 @@ project(Kakoune LANGUAGES CXX)
 # Prerequisites
 set(CMAKE_CXX_STANDARD 20)
 
+# enable doxygen
+include(cmake/Doxygen.cmake)
+enable_doxygen()
+
 # Kakoune version
 option(MANUAL_VERSION "Use a manually defined version instead of the date" FALSE)
 mark_as_advanced(MANUAL_VERSION)
